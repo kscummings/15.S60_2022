@@ -33,7 +33,9 @@ We will be accessing Engaging through an SSH client. Windows users should naviga
 
 ## Task 4: (Sloan/ORC only) Access Engaging cluster
 
-In order to login, you first need to request an account by emailing [stshelp@mit.edu](stshelp@mit.edu).
+Sloan and ORC affiliated students are eligible to get access to the Engaging computing cluster. If you are not Sloan/ORC, then skip this step. You will not be able to code live in Engaging during this section on Tuesday, but many of the principles we cover will still be useful to learn.
+
+In order to login, you first need to request an account by emailing [stshelp@mit.edu](stshelp@mit.edu). This may take a day or two (don't worry if you can't get access before class).
 
 Once your account has been created, login to Engaging.
 
@@ -51,7 +53,7 @@ julia> println("Hello, World!")
 
 julia> exit()
 ```
-5. **Take a screenshot of your commands/outputs for #1-4. This will be submitted in Canvas.**
+5. **Take a screenshot of your commands/outputs for #1-4. This will be submitted in Canvas.** If your Engaging account has not been created by the time the pre-assignment is due, instead take a screenshot of your Engaging account request email.
 
 ## Task 5: Make an Overleaf account
 
