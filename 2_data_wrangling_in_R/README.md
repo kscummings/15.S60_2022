@@ -27,7 +27,7 @@ We will be learning the `R` programming language for statistical computation. To
 We will use three libraries for this session: `tidyr`, `dplyr`, and `ggplot2`. These three packages (and many more!) can all be conveniently loaded using the metalibrary `tidyverse`. To unleash the power of the Tidyverse open RStudio and type the following into the console window and press "Enter":
 
 ```
-install.packages(c("tidyverse", "lubridate", "broom", "leaflet"))
+install.packages(c("tidyverse", "lubridate", "broom", "leaflet", "rmarkdown"))
 ```
 
 You should test that the libraries will load by then running in the console window:
@@ -37,6 +37,7 @@ library(tidyverse)
 library(lubridate)
 library(broom)
 library(leaflet)
+library(rmarkdown)
 ```
 
 Then test that `dplyr`, `lubridate`, and `broom` work by executing the command:
