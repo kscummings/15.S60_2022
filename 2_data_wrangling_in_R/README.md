@@ -84,3 +84,7 @@ which should produce a cloud of points centered around the origin.
 - Any of the [RStudio cheatsheets](https://www.rstudio.com/resources/cheatsheets/), for that matter
 - [Comparative discussion](http://stackoverflow.com/questions/21435339/data-table-vs-dplyr-can-one-do-something-well-the-other-cant-or-does-poorly) of `dplyr` and `data.table`, an alternative package with higher performance but more challenging syntax.  
 - There are some additional packages that we will not cover in this class but are nonetheless very useful! A few examples: [cowplot](https://wilkelab.org/cowplot/index.html) for combining multiple plots, [janitor](https://github.com/sfirke/janitor) for quick column name cleanup and a nicer table command, and [gt](https://gt.rstudio.com/) for creating publication-quality tables.
+
+## Questions?
+
+Email Josh at [jtwilde@mit.edu](mailto:jtwilde@mit.edu).
