@@ -221,6 +221,9 @@ prices <- listings %>%
  
 # Now, we can do a full join to add a `price` column.
 rooms_prices <- full_join(rooms, prices, by='name')
+
+rooms %>% 
+  left_join(prices, by='name')
  
 # This gives us a table with the number of bed/bathrooms separated out in a tidy 
 # format. This format is useful because it is amenable to `ggplot`. Visualization is our next topic, 
@@ -282,7 +285,7 @@ by.rating.bedroom %>% head()
 # Now, we can chain this into the `ggplot` function. The 'geom_point()' command creates scatterplots.
 
 by.rating.bedroom %>%
-  ggplot(aes(x=review_scores_rating, y=med.price)) +
+  ggplot(aes(x=review_scores_rating, y=med.price)) + 
   geom_point()
 
 ######### Aesthetics
@@ -312,9 +315,9 @@ by.rating.bedroom %>%
 # The `geom_smooth` command creates a line that represents smoothed conditional means.
 
 by.rating.bedroom %>%
-  ggplot(aes(x=review_scores_rating, y=med.price, color=factor(bedrooms))) +
-  geom_point() +
-  geom_smooth(method = lm)
+  ggplot(aes(x=review_scores_rating, y=med.price)) +
+  geom_point(aes(color=factor(bedrooms))) +
+  geom_smooth(aes(color=factor(bedrooms)), method = lm)
 
 # `lm` stands for linear smooths. We can also choose other methods, i.e. loess for locally smooths.
 
@@ -324,16 +327,17 @@ by.rating.bedroom %>%
 # Can we draw a scatterplot of the listings such that
 # 
 # - Entries are grouped by review_scores_rating,
-# - Bubbles are pink and 50% transparent
+# - Bubbles are pink and 50% transparent (geom_point())
 # - Size of the bubbles indicate how many reviews received by that group
-# - Background is white
+# - Background is white (look at theme_bw())
 # - The plot is price against score
 ########
 
 ######## 
 # ANSWER
 ########
-listings %>%	filter(!is.na(review_scores_rating)) %>%	
+listings %>%	
+  filter(!is.na(review_scores_rating)) %>%	
   group_by(review_scores_rating) %>%	
   summarize(med.price = median(nprice),	
             num = n()) %>%	
@@ -442,7 +446,7 @@ listings %>%
   filter(neighbourhood_cleansed %in% c('South Boston Waterfront', 'Bay Village', 	
                                        'Leather District', 'Back Bay', 'Downtown')) %>%	
   ggplot(aes(x=neighbourhood_cleansed, y=nprice)) +	
-  geom_violin() + 
+  geom_violin(color = 'darkgreen') + 
   theme_minimal()
 
 ## The full distribution
@@ -481,7 +485,7 @@ listings %>%
 # (dodging preserves the vertical position of an geom while adjusting the horizontal position):	
 listings %>%
   filter(nprice < 500) %>%
-  ggplot(aes(x=nprice, y=..density.., fill=room_type)) +
+  ggplot(aes(x=nprice, y=..density..)) +
   geom_histogram(binwidth=50, center=25, position='dodge', color='black') +
   labs(x='Price', y='Frac. of Listings', fill='Room type') +
   facet_grid(.~room_type) + 
@@ -571,6 +575,9 @@ prices
 ########## ----------------------------------------------------------------
 
 #' Let's try this: 
+
+
+map(list.files('data/prices', full.names = T), read_csv)
 
 prices <- list.files('data/prices', full.names = T) %>% 
   map(read_csv) %>% 
