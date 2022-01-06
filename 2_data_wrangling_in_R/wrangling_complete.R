@@ -180,14 +180,6 @@ long_price %>% head()  # take a peek
 # column names from the columns that we are combining. 
 # - The third argument is the name of the new column that will contain the 
 # values from the column we are combining.
- 
-# Let's break down what `pivot_longer` does:
-# 
-# - The first argument is the columns that we would like to combine.
-# - The second argument is the name of the new column which will store the 
-# column names from the columns that we are combining. 
-# - The third argument is the name of the new column that will contain the 
-# values from the column we are combining.
 
 ######## 
 # Exercise: How could we get `long_price` back into it's original, wide format? (Hint: look at the help for `pivot_wider()`.)

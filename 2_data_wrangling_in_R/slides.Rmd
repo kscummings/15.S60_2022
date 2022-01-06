@@ -45,7 +45,13 @@ knitr::include_graphics('https://ismayc.github.io/moderndiver-book/images/tidy1.
 
 >- RStudio is an open-source IDE for R, a programming language for statistical computing. 
 >- **In my opinion**, R is not a useful tool without RStudio. With RStudio, R becomes very valuable for exploration and visualization!
->- Python's `sklearn` remains miles ahead of R's modeling toolkit
+>- Python's `sklearn` remains miles ahead of R's modeling toolkit, and Julia's `JuMP` is vastly superior for building optimization models
+
+## Topics
+
+> 1. Tidy data
+> 2. Visualization
+> 3. Functional data wrangling
 
 # Getting the ball rolling, `tidy` style 
 
@@ -267,8 +273,7 @@ Consider the following data below. How many variables does this dataset contain?
 
 . . .
 
-The way the table is presented, it seems like there are only two variables. 
-However, the correct answer is **3**. The variables are `Company`, `Quarter` and `Earnings`.
+The correct answer is **3**. The variables are `Company`, `Quarter` and `Earnings`.
 
 ## What is tidy data?
 
@@ -379,7 +384,7 @@ wide_earnings %>%
 - Viz-iting the world of `ggplot`
 - What does this plot show? Who knows? Who cares? Let's make some decent plots.
 
-```{r, out.height = 300, echo = FALSE, fig.align='center'}
+```{r, out.width = 400, echo = FALSE, fig.align='center'}
 knitr::include_graphics('figs/matplotlib.png')
 ```
 
@@ -630,7 +635,7 @@ If $g$ is a binary function, then
 
 . . .
 
-```{r, out.height = 200, echo = FALSE, fig.align='center'}
+```{r, out.width = 400, echo = FALSE, fig.align='center'}
 knitr::include_graphics('figs/reduce_purrr.png')
 ```
 
@@ -708,6 +713,12 @@ prices_nested %>% head()
 prices_nested$data[[1]] # get the first item of the list
 ```
 
+## This is great documentation
+
+```{r, out.width = 600, echo = FALSE}
+knitr::include_graphics('figs/nested_data_purrr.png')
+```
+
 ## Hands-on: Case Study, Part 3 {.center}
 
 ## We were here: 
@@ -720,12 +731,6 @@ knitr::include_graphics('figs/journey_1.png')
 
 ```{r, out.width = 1000, echo = FALSE}
 knitr::include_graphics('figs/journey_2.png')
-```
-
-## This is great documentation
-
-```{r, out.width = 600, echo = FALSE}
-knitr::include_graphics('figs/nested_data_purrr.png')
 ```
 
 ## Hands-on: Case Study, Part 4
