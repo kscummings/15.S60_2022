@@ -8,4 +8,10 @@ Please go to [this link](https://colab.research.google.com/drive/1rmKQP4JJH3RHD2
 
 Then check you can execute cells as instructed, and upload a screenshot to Canvas of the requested cells.
 
+See you on Thursday!
+
+### Questions?
+
+Please email me (Patricio)  at foncea@mit.edu for any questions about this session or the preassignment. 
+
 
