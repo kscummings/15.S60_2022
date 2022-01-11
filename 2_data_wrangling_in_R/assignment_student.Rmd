@@ -3,6 +3,7 @@ title: 'Assignment: Data Wrangling and Visualization in R'
 author: "You!"
 date: "1/6/2022"
 output: pdf_document
+always_allow_html: true
 ---
 
 ```{r setup, include=FALSE}
