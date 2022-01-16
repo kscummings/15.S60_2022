@@ -1,4 +1,4 @@
-# Lecture 5
+# Lecture 5: Advanced Deep Learning
 
 This session is divided in 4 parts:
 - Part 1: Review on NNs and Extended Notions on CNNs
