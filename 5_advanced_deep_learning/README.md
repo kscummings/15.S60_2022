@@ -11,7 +11,8 @@ We suggest to run a few cells before hand to make sure the notebook compiles on 
 
 
 
-# Lucky you! There is no preassignment for this session! Please just make sure the notebook works and feel free to skim through it before hand :)
+# Lucky you! 
+There is no preassignment for this session! Please just make sure the notebook works and feel free to skim through it before hand :)
 
 See you on Tuesday!
 
