@@ -1,5 +1,5 @@
 
-# 15.S60_2022
+# 15.S60 2022 - Computing in Optimization and Statistics
 
 - Session 1: Computational Literacy
 - Session 2: Data Wrangling in R
