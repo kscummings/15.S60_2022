@@ -1,4 +1,8 @@
 
 # 15.S60_2022
 
-Preassignment 3 is located in 3_machine_learning_in_python
+Session 1:
+Session 2:
+Session 3: Introduction to Machine Learning with Python
+Session 4: Introduction to Deep Learning
+Session 5: Advanced Deep Learning
