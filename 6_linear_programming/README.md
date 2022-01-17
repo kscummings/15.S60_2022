@@ -78,3 +78,7 @@ Create a new notebook by selecting New > Julia 1.7.1. Run the following command 
 using CSV, DataFrames, JuMP, Gurobi, LinearAlgebra, Plots, Random, Printf
 ```
 The installation is successful if the cell does not return any errors (warnings are ok). On Canvas, submit a screenshot of the full web browser page depicting the notebook outputs and the Julia kernel in use.
+
+## Questions?
+
+Email kaylac@mit.edu. 
