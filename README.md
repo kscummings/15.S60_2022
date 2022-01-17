@@ -6,3 +6,4 @@
 - Session 3: Introduction to Machine Learning with Python
 - Session 4: Introduction to Deep Learning
 - Session 5: Advanced Deep Learning
+- Session 6: Linear Programming with Julia
