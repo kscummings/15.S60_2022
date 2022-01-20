@@ -24,4 +24,4 @@ Please email Léonard at leobix@mit.edu for any questions about this session.
 
 ### Homework
 
-We will release the homework at the end of the session. You will have to implement your own transfer learning workflow to classify bird pictures. Oh what exciting!
+The homework is [here](https://colab.research.google.com/drive/10IMhJUiAepquOQsSSNSqX232veozk6mD?usp=sharing). You will have to implement your own transfer learning workflow or ConvNet to classify the CIFAR dataset. Good luck!
