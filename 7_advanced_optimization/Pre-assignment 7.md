@@ -8,13 +8,13 @@
    * After that we need to get an academic license for using it. Go to https://www.mosek.com/license/request/?i=acp  and using your MIT email address, request an academic license. `Mosek` will email you (usually within minutes) the license file with instructions on how to install it. Install the license accordingly.
    
    * Now open `Julia` REPL. Press `]` to enter package installation mode and input the following: 
-     `add MosekTools, Mosek, Convex, JuMP, Images, DelimitedFiles`
+     `add MosekTools, Mosek, Convex, JuMP, Images, DelimitedFiles, Gadfly`
    
      which besides `Mosek` installs some other packages that we will use. 
    
    * After the installation is done, press `BACKSPACE` to go back to `REPL` mode and input the following: 
    
-     `using  MosekTools, Mosek, Convex, JuMP, Images, DelimitedFiles`
+     `using  MosekTools, Mosek, Convex, JuMP, Images, DelimitedFiles, Gadfly`
    
      If installed properly, it will output nothing. **Take a screenshot of the `REPL` containing the last two lines and upload it as the pre-assignment 7.**
    
