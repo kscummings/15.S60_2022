@@ -39,7 +39,7 @@ df["zip_code"] = ["z"+z for z in zip_code]
 # this is to fix an issue where zip codes are read in as Int types, resulting in 0's being removed from beginning/end of zip code
 
 # limit to GBA
-#df = df[(df.longitude >= LON_BD[0]) & (df.longitude <= LON_BD[1]) & (df.latitude >= LAT_BD[0]) & (df.latitude <= LAT_BD[1])]
+df = df[(df.longitude >= LON_BD[0]) & (df.longitude <= LON_BD[1]) & (df.latitude >= LAT_BD[0]) & (df.latitude <= LAT_BD[1])]
 
 # write formatted dataframe
 df.to_csv(os.path.join("..", "formatted", "ma_population.csv"), index=False)
