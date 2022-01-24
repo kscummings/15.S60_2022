@@ -17,7 +17,14 @@
    * After the installation is done, press `BACKSPACE` to go back to `REPL` mode and input the following: 
    
      `using  MosekTools, Mosek, Convex, JuMP, Images, DelimitedFiles, Gadfly`
+     
+     (if you have any issue installing `Mosek` or `MosekTools`, alternatively please install `SCS`, which is an opensource solver for conic problems, by running 
+     `add SCS, Convex, JuMP, Images, DelimitedFiles, Gadfly`
+     and then test it using
+     `using SCS, Convex, JuMP, Images, DelimitedFiles, Gadfly`
+     )
    
-     If installed properly, it will output nothing. **Take a screenshot of the `REPL` containing the last two lines and upload it as the pre-assignment 7.**
+     If installed properly, it will output nothing. **Take a screenshot of the `REPL` containing the two lines of code mentioned above and upload it as the pre-assignment 7.**
+         
    
 If you have any issue during the installation phase, please send me an email to `sdgupta@mit.edu` or on zoom chat (you can find me under the name `Shuvomoy Das Gupta` if you are logged in zoom using your MIT account).
