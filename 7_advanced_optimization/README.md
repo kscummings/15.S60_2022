@@ -18,7 +18,7 @@
    
      If installed properly, it will output nothing. **Take a screenshot of the `REPL` containing the last two lines and upload it as the pre-assignment 7.**
    
-     If you have any issue during the installation phase, please send me an email to `sdgupta@mit.edu` or on zoom chat (you can find me under the name `Shuvomoy Das Gupta` if you are logged in zoom using your MIT account).
+If you have any issue during the installation phase, please send me an email to `sdgupta@mit.edu` or on zoom chat (you can find me under the name `Shuvomoy Das Gupta` if you are logged in zoom using your MIT account).
    
      
 
