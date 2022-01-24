@@ -18,13 +18,22 @@
    
      `using  MosekTools, Mosek, Convex, JuMP, Images, DelimitedFiles, Gadfly`
      
-     (if you have any issue installing `Mosek` or `MosekTools`, alternatively please install `SCS`, which is an opensource solver for conic problems, by running 
-     `add SCS, Convex, JuMP, Images, DelimitedFiles, Gadfly`
-     and then test it using
-     `using SCS, Convex, JuMP, Images, DelimitedFiles, Gadfly`
-     )
-   
      If installed properly, it will output nothing. **Take a screenshot of the `REPL` containing the two lines of code mentioned above and upload it as the pre-assignment 7.**
-         
-   
+     
+### Those who have Apple's M1 chip
+If you have a computer with Apple's new M1 chip, then Mosek would not compile there (see [link](https://themosekblog.blogspot.com/2020/11/apple-silicon-m1-plans.html)). In such a case (or if you have any issue installing `Mosek` or `MosekTools`) alternatively please install `COSMO`, which is an opensource solver for conic problems, by running the following in Julia:
+
+(Press `]` to enter package installation mode)
+
+`add COSMO, Convex, JuMP, Images, DelimitedFiles, Gadfly`
+
+and then test it using
+
+(Press `BACKSPACE` to go back to `REPL` mode)
+
+`using COSMO, Convex, JuMP, Images, DelimitedFiles, Gadfly`
+
+**Take a screenshot of the `REPL` containing the two lines of code mentioned above and upload it as the pre-assignment 7.**
+     
+### Any other issue?
 If you have any issue during the installation phase, please send me an email to `sdgupta@mit.edu` or on zoom chat (you can find me under the name `Shuvomoy Das Gupta` if you are logged in zoom using your MIT account).
