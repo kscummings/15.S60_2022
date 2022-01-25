@@ -1,0 +1,299 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%% In case fonts are not rendered properly, please do the following:
+%% 1. In Document > Settings..., under Language > Encoding, choose "Other" 
+%% and select "Language Default (no inputenc)".
+%% 2. Simply uncheck "Use LaTeX font encoding" and no fontenc line will be added.
+
+% Make sections heading bold sans serif
+\usepackage{fullpage,graphicx,psfrag,amsfonts,verbatim, url}
+
+\usepackage{abstract} % Make abstract
+
+% using parskip for nice paragraph spacing 
+\usepackage{parskip}
+% these are to fix the paragraph spacing for theorems, only used if parskip package is used
+\begingroup
+\makeatletter
+   \@for\theoremstyle:=definition,remark,plain\do{%
+     \expandafter\g@addto@macro\csname th@\theoremstyle\endcsname{%
+        \addtolength\thm@preskip\parskip
+     }%
+   }
+\endgroup
+%\usepackage{parskip}
+\usepackage{thmtools}
+
+\declaretheoremstyle[
+headfont = \sffamily\bfseries,
+notefont=\normalfont, notebraces={(}{)},
+bodyfont=\normalfont\itshape,
+%headpunct={},
+headformat=\NAME~\NUMBER\NOTE
+]{plain}
+\declaretheoremstyle[
+headfont = \sffamily\bfseries,
+notefont=\normalfont, notebraces={(}{)},
+bodyfont=\normalfont\itshape,
+headpunct={},
+headformat=\NAME~\NUMBER\NOTE
+]{notnum}
+
+\declaretheorem[numberwithin=section,style=plain]{theorem}
+\declaretheorem[numberwithin=section,style=plain]{corollary}
+\declaretheorem[numberwithin=section,style=plain]{lemma}
+\declaretheorem[numberwithin=section,style=plain]{definition}
+\declaretheorem[numberwithin=section,style=plain]{assumption}
+\declaretheorem[numbered=no,style=notnum]{remark}
+\declaretheorem[numberwithin=section,style=plain]{proposition}
+\declaretheorem[numbered=no,style=notnum]{example}
+
+% Make section titles bold
+\renewcommand\abstractnamefont{\bfseries\sffamily}
+% section title fonts
+\usepackage{titlesec}
+\def\sectionfont{\sffamily\Large\bfseries\boldmath}
+\def\subsectionfont{\sffamily\large\bfseries\boldmath}
+\def\paragraphfont{\sffamily\normalsize\bfseries\boldmath}
+\titleformat*{\section}{\sectionfont}
+\titleformat*{\subsection}{\subsectionfont}
+\titleformat*{\subsubsection}{\paragraphfont}
+\titleformat*{\paragraph}{\paragraphfont}
+\titleformat*{\subparagraph}{\paragraphfont}
+\usepackage[small,labelfont={bf,sf}]{caption}  % Change captions
+\setlength{\abovecaptionskip}{0em}
+
+
+
+\usepackage{multirow}
+\setlength{\captionmargin}{20pt}
+\usepackage{enumitem}
+\setlist{nolistsep}
+
+% Tables
+\usepackage{booktabs}           % Nicer Tables
+\usepackage{adjustbox} % To adjust table length
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+todonotes
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x\in\mathbf{R}^{d}}{\mbox{minimize}} & c^{\top}x\\
+\mbox{subject to} & \|A_{i}x+b_{i}\|_{2}\leq q_{i}^{\top}x+d_{i},\quad i=1,\ldots,p,\\
+ & Cx\leq f.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x\in\mathbf{R}^{d}}{\mbox{minimize}} & \mathbf{tr}(CX)\\
+\mbox{subject to} & \mathbf{tr}(A_{i}X)=b_{i},\quad i=1,\ldots,m,\\
+ & X\succeq0.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x,y}{\mbox{minimize}} & c^{\top}x+d^{\top}y\\
+\mbox{subject to} & Ax+By=b,\\
+ & Cx+Dy\geq f,\\
+ & x\succeq0,\\
+ & x\in\mathbf{R}^{d},\\
+ & y\in\{0,1\}^{n}.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{i=1}^{n}|x_{i}-\tau_{i}|+\lambda\sqrt{\sum_{i=2}^{n}(x_{i}-x_{i-1})^{2}}=\|x-\tau\|_{1}+\lambda\|Ax\|_{2},
+\]
+
+\end_inset
+
+ where 
+\begin_inset Formula $A$
+\end_inset
+
+ is a matrix of size 
+\begin_inset Formula $(n-1)\times n$
+\end_inset
+
+ with 
+\begin_inset Formula $A_{i,i}=-1,A_{i,i+1}=1$
+\end_inset
+
+ for 
+\begin_inset Formula $i=1,\ldots,n-1$
+\end_inset
+
+ and the rest of the elements being zero.
+ So, the optimization problem we want to solve is: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x\in\mathbf{R}^{d}}{\mbox{minimize}} & \|x-\tau\|_{1}+\lambda\|Ax\|_{2}\\
+\mbox{subject to} & x_{i}=x_{i+365},\quad i=1,\ldots,n.
+\end{array}
+\]
+
+\end_inset
+
+This is an SOCP, because it can be written as: 
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x,u,t}{\mbox{minimize}} & \sum_{i=1}^{n}u_{i}+\lambda t\\
+\mbox{subject to} & \|Ax\|_{2}\leq t\\
+ & \vert x_{i}-\tau_{i}\vert\leq u_{i},\quad i=1,\ldots,n.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is a convex function? A general convex optimization problem has the
+ following form:
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x\in\mathbf{R}^{d}}{\mbox{minimize}} & f_{0}(x)\\
+\mbox{subject to} & a_{i}^{\top}x=b_{i},\quad i=1,\ldots,p,\\
+ & f_{i}(x)\leq0,\quad i=1,\ldots,m.
+\end{array}
+\]
+
+\end_inset
+
+ where the equality constraints are linear and the functions 
+\begin_inset Formula $f_{0},f_{1},\ldots,f_{m}$
+\end_inset
+
+ are convex.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{array}{ll}
+\underset{x\in\mathbf{R}^{n}}{\mbox{minimize}} & \sum_{i=1}^{n}v_{i}x_{i}\\
+\mbox{subject to} & \sum_{i=1}^{n}w_{i}x_{i}\leq W,\\
+ & x_{i}\in\{0,1\},\quad i=1,\ldots,n.
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
