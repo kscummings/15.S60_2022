@@ -29,7 +29,7 @@ We need to get Conda working in a Bash shell. To check if yours already works, o
 
 If Conda cannot be found, then open the Anaconda Prompt and type `$ conda init bash`. Then open Git Bash and check whether Conda can be found.
 
-If the step above didn't work, [this thread](https://stackoverflow.com/a/68415492) may have some clues for your particular issue.
+If the step above didn't work, [this thread](https://stackoverflow.com/questions/54501167/anaconda-and-git-bash-in-windows-conda-command-not-found/68415492#68415492) may have some clues for your particular issue.
 
 ### Building a Trial Virtual Environment
 
