@@ -52,6 +52,7 @@ Record information about the installation:
 Remove the environment:
 
 `(test_env) $ conda deactivate`
+
 `$ conda remove -n test_env --all`
 
 Upload your `env_info.txt` and `env_history.txt` files to Canvas under the pre-assignment.
