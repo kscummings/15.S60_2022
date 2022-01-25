@@ -13,7 +13,7 @@ and then run:
 
 `$ conda --version`
 
-If the above command doesn't output an error, then you're off to a good start and can skip to the section on **Building a Trial Environment**. If not, follow the instructions below to install Conda.
+If the above command doesn't output an error, then you're off to a good start and can skip to the section on **Using Conda in Git Bash** or **Building a Trial Virtual Environment** depending on your operating system. If not, follow the instructions below to install Conda.
 
 Note that I'll be using Conda version 4.11.0 (the latest) in the session. Earlier versions should also be fine, but if you have trouble running the commands in this pre-assignment then updating to this version is a good troubleshooting step.
 
@@ -23,9 +23,17 @@ Welcome to the confusing world of Conda installers! There are many different fla
 
 Visit [conda-forge/miniforge](https://github.com/conda-forge/miniforge) and download + run the installer under **Miniforge3** that corresponds to your machine's architecture. Also feel free to use your favorite package manager (e.g. APT, Pacman on Linux; Homebrew on MacOS) if it provides Miniforge.
 
+### Using Conda in Git Bash (Windows)
+
+We need to get Conda working in a Bash shell. To check if yours already works, open Git Bash and type `$ conda --version` again.
+
+If Conda cannot be found, then open the Anaconda Prompt and type `$ conda init bash`. Then open Git Bash and check whether Conda can be found.
+
+If the step above didn't work, [this thread](https://stackoverflow.com/questions/54501167/anaconda-and-git-bash-in-windows-conda-command-not-found) may have some clues for your particular issue.
+
 ### Building a Trial Virtual Environment
 
-In the terminal you used to check Conda's version, create a new Conda environment:
+In your Git Bash or Linux/macOS terminal, create a new Conda environment:
 
 `$ conda create -n test_env`
 
