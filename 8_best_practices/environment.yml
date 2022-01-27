@@ -1,0 +1,14 @@
+name: iap_env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.8
+  - r=4.0
+  - snakemake
+  - r-ggplot2
+  - r-dplyr
+  - r-forcats
+  - r-purrr
+  - r-readr
+prefix: /usr/local/Caskroom/miniforge/base/envs/iap_env

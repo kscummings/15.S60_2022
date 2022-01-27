@@ -1,0 +1,35 @@
+IDS = [1, 2, 3]
+
+
+rule all:
+    input:
+        "plots/final.pdf"
+
+
+rule process_all:
+    input:
+        "data/raw/data_dump_{id}.txt"
+    output:
+        "data/processed/{id}.txt"
+    shell:
+        "sed \"s/###/./g\" {input} > {output}"
+
+
+rule compute:
+    input:
+        "data/processed/{id}.txt"
+    output:
+        "data/results/{id}.txt"
+    params:
+        factor="{id}"
+    script:
+        "scripts/sum_data.py"
+
+
+rule plot:
+    input:
+        expand("data/results/{id}.txt", id=IDS)
+    output:
+        "plots/final.pdf"
+    script:
+        "scripts/plot.R"
