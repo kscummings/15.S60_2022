@@ -35,7 +35,7 @@ We will be accessing Engaging through an SSH client. Windows users should naviga
 
 Sloan and ORC affiliated students are eligible to get access to the Engaging computing cluster. If you are not Sloan/ORC, then skip this step. You will not be able to code live in Engaging during this section on Tuesday, but many of the principles we cover will still be useful to learn.
 
-In order to login, you first need to request an account by emailing [stshelp@mit.edu](stshelp@mit.edu). This may take a day or two (don't worry if you can't get access before class).
+In order to login, you first need to request an account [here](https://mitsloan.service-now.com/sloanservice?id=sc_cat_item&sys_id=cdc71c54db10401479297deaae9619ba). This may take a day or two (don't worry if you can't get access before class).
 
 Once your account has been created, login to Engaging.
 
